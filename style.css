@@ -1,0 +1,50 @@
+div.container-sm {
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+  }
+  h1 {
+    color: rgb(238, 167, 34);
+  }
+  
+  img.card-img-top 
+  {
+  height: 15rem;
+  overflow: hidden;
+  }
+  
+  body {
+  
+  background-color: rgb(135, 222, 154);
+  }
+  
+  img.card-img-bot
+  {
+  height: 15%;
+  width: 15%;
+  }
+  
+  #carouselExampleInterval {
+  height: 10rem;
+  overflow: hidden;
+  }
+  
+  #votes {
+  font-size: small;
+  color: green
+  }
+  
+  #votes1 {
+  font-size: small;
+  color: green
+  }
+  
+  #votes2 {
+  font-size: small;
+  color: green
+  }
+  
+  #votes3 {
+  font-size: small;
+  color: green
+  }
