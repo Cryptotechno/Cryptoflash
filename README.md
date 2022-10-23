@@ -1,3 +1,3 @@
 # new
 site
-its my site about crypto
+https://digital-cavalry.github.io/new/
