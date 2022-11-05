@@ -1,3 +1,7 @@
+div.post-meta {
+  text-decoration: none;
+ }
+
 div.container-sm {
   display: flex;
   justify-content: center;
@@ -51,4 +55,8 @@ div.card{
 
 .btn {
   text-decoration: none; /* Убираем подчёркивание */
+ }
+
+a {
+  text-decoration: none;
  }
