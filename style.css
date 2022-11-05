@@ -1,16 +1,3 @@
-div.post-meta {
-  text-decoration: none;
- }
-
- .btn {
-  text-decoration: none; /* Убираем подчёркивание */
- }
-
-a {
-  text-decoration: none;
- }
-
-
 div.container-sm {
   display: flex;
   justify-content: center;
@@ -62,3 +49,9 @@ div.card{
   background-color: #ffffff;
 }
 
+a.nav-link, button.btn {
+  color:black;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+}
