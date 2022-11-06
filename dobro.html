@@ -68,11 +68,22 @@
   <script>
     function printText() {
       let newElem = document.createElement( "p" ); // создаем новый элемент <button>
-      const text = document.createTextNode(document.getElementsByTagName("input")[0].value);
+      const text = document.createTextNode("Новый комментарий от прекрасного гостя криптотвиттера: " + document.getElementsByTagName("input")[0].value);
       newElem.appendChild(text); // добавляем текстовое содержимое элементу <button>                     
       document.body.appendChild(newElem);  // добавляем наш элемент в элемент <body>
     }
    
+    function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+
   </script>
 
 
