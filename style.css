@@ -59,11 +59,11 @@ div.card{
 a.nav-link {
   font-size: large;
   font-weight: bold;
-  color:rgb(151, 102, 5);
+  color:rgb(14, 11, 5);
 }
 
 a.navbar-brand {
-  color:rgb(236, 181, 78);
-  font-weight: bold;
-  font-size: larger;
+  color:rgb(5, 4, 2);
+  font-weight: bolder;
+  font-size: x-large;
 }
