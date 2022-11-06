@@ -49,9 +49,21 @@ div.card{
   background-color: #ffffff;
 }
 
-a.nav-link, button.btn {
+ button.btn {
   color:black;
   font-weight: bold;
   font-size: small;
   text-align: center;
+}
+
+a.nav-link {
+  font-size: large;
+  font-weight: bold;
+  color:rgb(151, 102, 5);
+}
+
+a.navbar-brand {
+  color:rgb(236, 181, 78);
+  font-weight: bold;
+  font-size: larger;
 }
