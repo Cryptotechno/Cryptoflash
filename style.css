@@ -67,3 +67,7 @@ a.navbar-brand {
   font-weight: bolder;
   font-size: x-large;
 }
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+ }
