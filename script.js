@@ -84,3 +84,9 @@ function downvote5() {
 }
 
 
+// после загрузки страницы
+$(function(){
+    // инициализации подсказок для всех элементов на странице, имеющих атрибут data-toggle="tooltip"
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
