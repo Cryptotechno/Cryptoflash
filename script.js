@@ -80,4 +80,7 @@ function downvote5() {
  counter5 = counter5 - 1;
 
  document.getElementById("votes5").innerHTML = "Понравилось " +  counter5 + " диванным трейдерам";
+
 }
+
+
