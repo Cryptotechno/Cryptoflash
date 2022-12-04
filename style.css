@@ -72,3 +72,8 @@ a.navbar-brand {
 li {
   list-style-type: none; /* Убираем маркеры */
  }
+
+ 
+ .custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>First example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+  </style>
+</head>
+<body>
+ 
+<div class="container">
+  <h2>Hover your mouse over the image!</h2>
+  <a href="#" data-toggle="tooltip" title="Meow-Meow!"><img src="http://www.nokiaplanet.com/uploads/posts/2015-11/1448881894_cute-kitty-360x640.jpg" alt="cat" width="145px"/></a>
+</div>
+
+<button type="button" class="btn btn-secondary"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="This top tooltip is themed via CSS variables."
+        title="Meow-Meow!"
+        >
+  Пользовательская подсказка
+</button>
+ 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+</script>
+
+
+<script>
+    $(function () {
+        // инициализация всплывающих подсказок с настройкой параметров title, placement и delay.
+        $('[data-bs-toggle="tooltip"]').tooltip({
+            title : 'Текст всплывающей подсказки при отсутствии атрибута data-title.',
+            placement: 'right',
+            delay: { show: 300, hide: 1000 }
+        });
+    });
+
+</script>
+</body>
+</html>

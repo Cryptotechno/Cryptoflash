@@ -3,13 +3,17 @@
 <!--Голова!-->
 <head>
     <meta charset="UTF-8">
+   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoFlash</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <meta name="description" lang="ru" content="Криптовалюта, крипта, nft, токены, биржа">
     <meta name="keywords" lang="ru" content="Криптовалюта, крипта, nft, токены, биржа">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2551/2551896.png" type="image/png">
     <!-- Google tag (gtag.js) -->
@@ -25,6 +29,7 @@
 <!--Голова закрылась!-->
 <!--Тело-->
 <!--Бутстрап-->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
@@ -45,6 +50,7 @@
             <a class="nav-link" href="reg.html">Регистрация</a>
             <a class="nav-link" href="test.html">Вечериночка</a>
             <a class="nav-link" href="update.html">Обновления</a>
+            <a class="nav-link" href="href.html">Тест</a>
           </div>
         </div>
       </div>
@@ -58,19 +64,19 @@
     <div class="carousel-item active" data-bs-interval="4000">
      <img  style="background: #020100" class="d-block w-100" alt="" style="width:100%;">
      <div class="centered">Децентрализованная идентификация в Web3 — как блокчейн и NFT позволяют ее добиться
-      <button type="button" class="btn btn-warning"><a href="card3.html" class="nav-link">Прочитать</a></button>
+      <button type="button" class="btn btn-warning"><a href="card3.html" class="nav-link" data-toggle="tooltip" title="+ 5 к Интеллекту">Прочитать</a></button>
      </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
       <img  style="background: #020100" class="d-block w-100" alt="">
 <div class="centered">Арбитраж криптовалют: что это, как работает, и как зарабатывать на разнице курсов криптовалют
-  <button type="button" class="btn btn-warning"><a href="card2.html" class="nav-link">Прочитать</a></button>
+  <button type="button" class="btn btn-warning"><a href="card2.html" class="nav-link" data-toggle="tooltip" title="+ 5 к Интеллекту">Прочитать</a></button>
 </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
       <img  style="background: #020100" class="d-block w-100" alt="">
 <div class="centered">Окунись в метавсленную Sandbox в поиске новых токенов
-  <button type="button" class="btn btn-warning"><a href="card1.html" class="nav-link">Прочитать</a></button>
+  <button type="button" class="btn btn-warning"><a href="card1.html" class="nav-link" data-toggle="tooltip" title="+ 5 к Интеллекту">Прочитать</a></button>
 </div>
     </div>
   </div>
@@ -94,7 +100,7 @@
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning"><a href="card6.html" class="nav-link">Прочитать</a></button>
+                <button type="button" class="btn btn-warning" data-toggle="tooltip" title="+ 5 к Интеллекту"><a href="card6.html" class="nav-link">Прочитать</a></button>
                   <p id="votes" class="card-reit">Понравилось 0 диванным трейдерам</p> 
                   <button id="upvote" onclick="upvote()" class="btn btn-success">Like</button>
                   <button id="downvote" onclick="downvote()" class="btn btn-danger">UnLike</button>
@@ -108,7 +114,7 @@
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning"><a href="card5.html" class="nav-link">Прочитать</a></button>
+                <button type="button" class="btn btn-warning" data-toggle="tooltip" title="+ 5 к Интеллекту"><a href="card5.html" class="nav-link">Прочитать</a></button>
                   <p  class="card-reit" id="votes1">Понравилось 0 диванным трейдерам</p>
                   <button id="upvote1" onclick="upvote1()" class="btn btn-success">Like</button>
                   <button id="downvote1" onclick="downvote1()" class="btn btn-danger">UnLike</button>
@@ -123,7 +129,7 @@
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-warning"><a href="card4.html" class="nav-link">Прочитать</a></button>
+                <button type="button" class="btn btn-warning"><a href="card4.html" class="nav-link" data-toggle="tooltip" title="+ 5 к Интеллекту">Прочитать</a></button>
                   <p id="votes2" class="card-reit">Понравилось 0 диванным трейдерам</p>
                   <button id="upvote2" onclick="upvote2()" class="btn btn-success">Like</button>
                   <button id="downvote2" onclick="downvote2()" class="btn btn-danger">UnLike</button>
@@ -137,7 +143,7 @@
               <div class="card-body">
                 <h5 class="card-title">Децентрализованная идентификация в Web3 </h5>
                 <p class="card-text">Как блокчейн и NFT позволяют ее добиться ?</p>
-                <button type="button" class="btn btn-warning"><a href="card3.html" class="nav-link">Прочитать</a></button>
+                <button type="button" class="btn btn-warning" data-toggle="tooltip" title="+ 5 к Интеллекту"><a href="card3.html" class="nav-link">Прочитать</a></button>
                   <p id="votes3" class="card-reit">Понравилось 0 диванным трейдерам</p>
                   <button id="upvote3" onclick="upvote3()" class="btn btn-success">Like</button>
                   <button id="downvote3" onclick="downvote3()" class="btn btn-danger">UnLike</button>
@@ -151,7 +157,7 @@
               <div class="card-body">
                 <h5 class="card-title">Арбитраж криптовалют</h5>
                 <p class="card-text">Что это, как работает, и как зарабатывать на разнице курсов криптовалют ?</p>
-                <button type="button" class="btn btn-warning"><a href="card2.html" class="nav-link">Прочитать</a></button>
+                <button type="button" class="btn btn-warning" data-toggle="tooltip" title="+ 5 к Интеллекту"><a href="card2.html" class="nav-link">Прочитать</a></button>
                   <p id="votes4" class="card-reit">Понравилось 0 диванным трейдерам</p>
                   <button id="upvote4" onclick="upvote4()" class="btn btn-success">Like</button>
                   <button id="downvote4" onclick="downvote4()" class="btn btn-danger">UnLike</button>
@@ -165,7 +171,7 @@
               <div class="card-body">
                 <h5 class="card-title">Что такое Sandbox?</h5>
                 <p class="card-text">Окунись в метавсленную Sandbox в поиске новых токенов</p>
-                <button type="button" class="btn btn-warning"><a href="card1.html" class="nav-link">Прочитать</a></button>
+                <button type="button" class="btn btn-warning" data-toggle="tooltip" title="+ 5 к Интеллекту"><a href="card1.html" class="nav-link">Прочитать</a></button>
                   <p id="votes" class="card-reit">Понравилось 0 диванным трейдерам</p> 
                   <button id="upvote" onclick="upvote()" class="btn btn-success">Like</button>
                   <button id="downvote" onclick="downvote()" class="btn btn-danger">UnLike</button>
@@ -189,6 +195,9 @@
       <p style="font-size: 11px; color: gray; text-align: center;">      гитхаб этого бомбического сайта <a href="https://github.com/Digital-cavalry/Cryptoflash">https://github.com/Digital-cavalry/Cryptoflash</a> 
       
       </p>
+
+
+
     </body>
     <!--Тело закрылось-->
 </html>
