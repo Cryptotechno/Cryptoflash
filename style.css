@@ -14,7 +14,7 @@ overflow: hidden;
 }
 
 body {
-background-color: rgb(135, 222, 154);
+background-color: rgb(238, 167, 34);
 }
 
 img.card-img-bot
@@ -25,7 +25,8 @@ width: 15%;
 
 .card-reit{
 font-size: small;
-color: green
+color: rgb(238, 167, 34);
+font-weight: bold;
 }
 
 
