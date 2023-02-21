@@ -211,30 +211,28 @@
             </div>
 
             <div class="col">
-                <div class="card">
-                    <img src="img/test.jpg" class="card-img-top" alt="">
-                    <div class="card-body" style="padding: 1rem;">
-                        <h3 class="card-title" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Card Title</h3>
-                        <p class="card-text" style="font-size: 1rem;">Some quick example text to build on the card title
-                            and make up
-                            the bulk of the card's content.</p>
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <button type="button" class="btn btn-warning" data-toggle="tooltip"
-                                title="+ 5 to Intelligence" style="margin-right: 1rem;">
-                                <a href="card/card6.html" class="nav-link"
-                                    style="color: white; text-decoration: none;">Read</a>
-                            </button>
-                            <div style="display: flex; align-items: center;">
-                                <p id="votes" class="card-reit" style="margin-right: 1rem;">Liked by 0 armchair traders
-                                </p>
-                                <button id="upvote" onclick="upvote()" class="btn btn-dark"
-                                    style="margin-right: 0.5rem;">Like</button>
-                                <button id="downvote" onclick="downvote()" class="btn btn-dark">Unlike</button>
+                <div class="card shadow-sm">
+                    <img src="img/test.jpg" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Card title</h5>
+                        <p class="card-text mb-4">Some quick example text to build on the card title and make up the
+                            bulk of the
+                            card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="card/card6.html" class="btn btn-outline-warning" role="button"
+                                data-toggle="tooltip" data-placement="bottom" title="Read more">Read</a>
+                            <div class="d-flex align-items-center">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="upvote()"><i
+                                        class="fas fa-thumbs-up"></i></button>
+                                <span class="mx-2 card-reit">Liked by 0 armchair traders</span>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="downvote()"><i
+                                        class="fas fa-thumbs-down"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
 
         </div>
