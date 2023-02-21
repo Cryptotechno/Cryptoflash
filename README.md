@@ -1,5 +1,5 @@
 # new
 site
-https://cryptotechno.github.io/Cryptoflash
+https://cryptoflash.nl/
 Как вам такое?
 
