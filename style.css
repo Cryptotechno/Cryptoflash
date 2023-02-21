@@ -1,13 +1,13 @@
 div.container-sm {
-  display: flex;
-  justify-content: center;
-  padding-left: 15%;
+display: flex;
+justify-content: center;
+padding-left: 15%;
 }
 h1 {
-  color: rgb(238, 167, 34);
+color: rgb(238, 167, 34);
 }
 
-img.card-img-top 
+img.card-img-top
 {
 height: 12rem;
 overflow: hidden;
@@ -37,44 +37,44 @@ width: 10rem;
 
 /* Centered text */
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    color: wheat;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-weight: bold;
+color: wheat;
 }
 
 div.card{
-  width: 18rem;
-  background-color: #ffffff;
+width: 18rem;
+background-color: #ffffff;
 }
 
- button.btn {
-  color:rgb(253, 253, 252);
-  font-weight: bold;
-  font-size: small;
-  text-align: center;
+button.btn {
+color:rgb(253, 253, 252);
+font-weight: bold;
+font-size: small;
+text-align: center;
 }
 
 a.nav-link {
-  font-size: large;
-  font-weight: bold;
-  color:rgb(14, 11, 5);
+font-size: large;
+font-weight: bold;
+color:rgb(14, 11, 5);
 }
 
 a.navbar-brand {
-  color:rgb(5, 4, 2);
-  font-weight: bolder;
-  font-size: x-large;
+color:rgb(5, 4, 2);
+font-weight: bolder;
+font-size: x-large;
 }
 
 li {
-  list-style-type: none; /* Убираем маркеры */
- }
+list-style-type: none; /* Remove markers */
+}
 
- 
- 
- .custom-tooltip {
-  --bs-tooltip-bg: var(--bs-primary);
+
+
+.custom-tooltip {
+--bs-tooltip-bg: var(--bs-primary);
 }
