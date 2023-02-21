@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 110,
+    "editor.formatOnSaveMode": "file"
+}

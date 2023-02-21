@@ -74,7 +74,6 @@ list-style-type: none; /* Remove markers */
 }
 
 
-
 .custom-tooltip {
 --bs-tooltip-bg: var(--bs-primary);
 }
