@@ -1,79 +1,86 @@
+
+
 div.container-sm {
-display: flex;
-justify-content: center;
-padding-left: 15%;
-}
-h1 {
-color: rgb(238, 167, 34);
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
 }
 
-img.card-img-top
-{
-height: 12rem;
-overflow: hidden;
+h1 {
+    color: rgb(238, 167, 34);
+}
+
+img.card-img-top {
+    height: 12rem;
+    overflow: hidden;
 }
 
 body {
-background-color: rgb(238, 167, 34);
+    background-color: rgb(238, 167, 34);
 }
 
-img.card-img-bot
-{
-height: 15%;
-width: 15%;
+img.card-img-bot {
+    height: 15%;
+    width: 15%;
 }
 
-.card-reit{
-font-size: small;
-color: rgb(238, 167, 34);
-font-weight: bold;
+.card-reit {
+    font-size: small;
+    color: rgb(238, 167, 34);
+    font-weight: bold;
 }
 
 
 img.d-block {
-height: 10rem;
-width: 10rem;
+    height: 10rem;
+    width: 10rem;
 }
 
 /* Centered text */
 .centered {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-weight: bold;
-color: wheat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: wheat;
 }
 
-div.card{
-width: 18rem;
-background-color: #ffffff;
+div.card {
+    width: 18rem;
+    background-color: #ffffff;
+}
+
+div.card:hover {
+    box-shadow: black;
 }
 
 button.btn {
-color:rgb(253, 253, 252);
-font-weight: bold;
-font-size: small;
-text-align: center;
+    color: rgb(253, 253, 252);
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
 }
 
 a.nav-link {
-font-size: large;
-font-weight: bold;
-color:rgb(14, 11, 5);
+    font-size: large;
+    font-weight: bold;
+    color: rgb(14, 11, 5);
 }
 
 a.navbar-brand {
-color:rgb(5, 4, 2);
-font-weight: bolder;
-font-size: x-large;
+    color: rgb(5, 4, 2);
+    font-weight: bolder;
+    font-size: x-large;
 }
 
 li {
-list-style-type: none; /* Remove markers */
+    list-style-type: none;
+    /* Remove markers */
 }
 
 
 .custom-tooltip {
---bs-tooltip-bg: var(--bs-primary);
+    --bs-tooltip-bg: var(--bs-primary);
 }
+
