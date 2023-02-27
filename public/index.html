@@ -1,89 +1,282 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!--Head!-->
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoFlash</title>
+    <link rel="canonical" href="https://cryptoflash.nl/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" lang="en" content="Cryptocurrency, crypto, nft, tokens, exchange">
+    <meta name="keywords" lang="en" content="Cryptocurrency, crypto, nft, tokens, exchange">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2551/2551896.png" type="image/png">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5GGN9TG');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<!--Head closed!-->
+
+<body>
+    <!--Body-->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GGN9TG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <!--Bootstrap-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">CryptoFlash<img src="img/bolt.svg" alt="" height="45"
+                    width="45"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+
+                    <!-- Navigation links container -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <!-- Registration link -->
+                            <a class="nav-link" href="reg.html">Registration</a>
+                            <!-- About page link -->
+                            <a class="nav-link" href="about.html">About</a>
+                            <!-- Updates page link -->
+                            <a class="nav-link" href="update.html">Updates</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img style="background: #020100" class="d-block w-100" alt="" style="width:100%;">
+                <div class="centered">Decentralized identification in Web3 - how blockchain and NFTs make it possible
+                    <button type="button" class="btn btn-warning"><a href="card/card3.html" class="nav-link"
+                            data-toggle="tooltip" title="+ 5 to Intelligence">Read</a></button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img style="background: #020100" class="d-block w-100" alt="">
+                <div class="centered">Cryptocurrency arbitration: what it is, how it works, and how to profit from
+                    cryptocurrency exchange rate differences
+                    <button type="button" class="btn btn-warning"><a href="card/card2.html" class="nav-link"
+                            data-toggle="tooltip" title="+ 5 to Intelligence">Read</a></button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img style="background: #020100" class="d-block w-100" alt="">
+                <div class="centered">Dive into the metaverse sandbox in search of new tokens
+                    <button type="button" class="btn btn-warning"><a href="card/card1.html" class="nav-link"
+                            data-toggle="tooltip" title="+ 5 to Intelligence">Read</a></button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <br>
+    <div class="container-sm overflow-hidden text-left">
+        <div class="row g-4">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+            <div class="col">
+                <div class="card">
+                    <img src="img/10tips.png" class="card-img-top" alt="Cryptocurrency">
+                    <div class="card-body">
+                        <h5 class="card-title">10 Tips for Making Profitable Crypto Trades</h5>
+                        <p class="card-text">Learn valuable tips and strategies for trading cryptocurrencies
+                            successfully and
+                            profitably in any market condition.</p>
+                        <button type="button" class="btn btn-warning" data-toggle="tooltip" title="+ 5 to Intelligence">
+                            <a href="card/card7.html" class="nav-link">Read</a></button>
+                        <p id="votes" class="card-reit">Liked by 0 readers</p>
+                        <button id="upvote" onclick="upvote()" class="btn btn-dark">Like</button>
+                        <button id="downvote" onclick="downvote()" class="btn btn-dark">Dislike</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/growth.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">The Rise of Cryptocurrencies</h5>
+                        <p class="card-text">Learn about the history and growth of cryptocurrencies, and how they are
+                            changing the world of finance</p>
+                        <button type="button" class="btn btn-warning" data-toggle="tooltip" title="+ 5 to Intelligence">
+
+                            <a href="card/card6.html" class="nav-link">Read</a></button>
+                        <p id="votes" class="card-reit">Liked by 0 armchair traders</p>
+                        <button id="upvote" onclick="upvote()" class="btn btn-dark">Like</button>
+                        <button id="downvote" onclick="downvote()" class="btn btn-dark">Unlike</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/guide.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">The Beginner's Guide to Cryptocurrency</h5>
+                        <p class="card-text">What You Need to Know</p>
+                        <button type="button" class="btn btn-warning" data-toggle="tooltip"
+                            title="+ 5 to Intelligence"><a href="card/card5.html" class="nav-link">Read</a></button>
+                        <p class="card-reit" id="votes1">Liked by 0 armchair traders</p>
+                        <button id="upvote1" onclick="upvote1()" class="btn btn-dark">Like</button>
+                        <button id="downvote1" onclick="downvote1()" class="btn btn-dark">Unlike</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/spot.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">What is spot trading?</h5>
+                        <p class="card-text">You can trade any assets on spot - cryptocurrencies, securities, and fiat
+                            currency.</p>
+                        <button type="button" class="btn btn-warning"><a href="card/card4.html" class="nav-link"
+                                data-toggle="tooltip" title="+ 5 to Intelligence">Read</a></button>
+                        <p id="votes2" class="card-reit">Liked by 0 armchair traders</p>
+                        <button id="upvote2" onclick="upvote2()" class="btn btn-dark">Like</button>
+                        <button id="downvote2" onclick="downvote2()" class="btn btn-dark">Unlike</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/web3.png" class="card-img-top" everything="">
+                    <div class="card-body">
+                        <h5 class="card-title">Decentralized Identity in Web3</h5>
+                        <p class="card-text">How can blockchain and NFTs make it possible?</p>
+                        <button type="button" class="btn btn-warning" data-toggle="tooltip"
+                            title="+ 5 to Intelligence"><a href="card/card3.html" class="nav-link">Read</a></button>
+                        <p id="votes3" class="card-reit">Liked by 0 couch traders</p>
+                        <button id="upvote3" onclick="upvote3()" class="btn btn-dark">Like</button>
+                        <button id="downvote3" onclick="downvote3()" class="btn btn-dark">UnLike</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/cryptotrading.png" class="card-img-top" everything="">
+                    <div class="card-body">
+                        <h5 class="card-title">Cryptocurrency arbitrage</h5>
+                        <p class="card-text">What is it, how does it work, and how to make money on the difference in
+                            cryptocurrency rates?</p>
+                        <button type="button" class="btn btn-warning" data-toggle="tooltip"
+                            title="+ 5 to Intelligence"><a href="card/card2.html" class="nav-link">Read</a></button>
+                        <p id="votes4" class="card-reit">Liked by 0 couch traders</p>
+                        <button id="upvote4" onclick="upvote4()" class="btn btn-dark">Like</button>
+                        <button id="downvote4" onclick="downvote4()" class="btn btn-dark">UnLike</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/sandbox.png" class="card-img-top" everything="">
+                    <div class="card-body">
+                        <h5 class="card-title">What is Sandbox?</h5>
+                        <p class="card-text">Dive into the Sandbox metaverse for new tokens</p>
+                        <button type="button" class="btn btn-warning" data-toggle="tooltip"
+                            title="+ 5 to Intelligence"><a href="card/card1.html" class="nav-link">Read</a></button>
+                        <p id="votes" class="card-reit">Liked by 0 couch traders</p>
+                        <button id="upvote" onclick="upvote()" class="btn btn-dark">Like</button>
+                        <button id="downvote" onclick="downvote()" class="btn btn-dark">UnLike</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <br>
+                    <p style="font-size: 11px; color: gray; text-align: center;"> tell jokes here :)
+                        <a href="https://t.me/kotik2281488 ">https://t.me/kotik2281488</a> <br>
+                        github of this bomb site <a
+                            href="https://github.com/Cryptotechno/Cryptoflash">https://github.com/Cryptotechno/Cryptoflash</a>
+                        <br>
+                        © 2023 CryptoFlash.nl. All rights reserved.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+<!--Body closed-->
+
 </html>
