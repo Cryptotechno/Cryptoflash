@@ -78,10 +78,24 @@ function upvote5() {
     document.getElementById("votes5").innerHTML = "Liked " + counter5 + " traders";
 }
 
+let counter6 = 0;
+
 function downvote5() {
     counter5 = counter5 - 1;
 
     document.getElementById("votes5").innerHTML = "Liked " + counter5 + " traders";
+}
+
+function upvote6() {
+    counter6 = counter6 + 1;
+
+    document.getElementById("votes5").innerHTML = "Liked " + counter6 + " traders";
+}
+
+function downvote6() {
+    counter6 = counter6 - 1;
+
+    document.getElementById("votes5").innerHTML = "Liked " + counter6 + " traders";
 
 }
 
