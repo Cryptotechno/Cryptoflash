@@ -1,0 +1,192 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocard</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <style>
+        body {
+            background-color: #100e17;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .card {
+            --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+            width: 250px;
+            height: 400px;
+            padding: 2%;
+            border-radius: 1rem;
+            overflow: visible;
+            background: #f7ba2b;
+            background: var(--background);
+            position: relative;
+            z-index: 1;
+        }
+
+        .card::after {
+            position: absolute;
+            content: "";
+            top: 30px;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            transform: scale(0.8);
+            filter: blur(25px);
+            background: #f7ba2b;
+            background: var(--background);
+            transition: opacity .5s;
+        }
+
+        .card-info {
+            --color: #181818;
+            background: var(--color);
+            color: var(--color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            border-radius: .7rem;
+        }
+
+        .card .title {
+            font-weight: bold;
+            letter-spacing: .1em;
+        }
+
+        /*Hover*/
+        .card:hover::after {
+            opacity: 0;
+        }
+
+        .card:hover .card-info {
+            color: #f7ba2b;
+            transition: color 1s;
+
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: center;
+            row-gap: 2%;
+            column-gap: 5%;
+        }
+
+
+
+        @media (max-width: 770px) {
+
+            /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+
+        nav {
+            color: aliceblue;
+            background: #100e17;
+            justify-content: flex-start;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 254, 254);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="grid-container">
+
+                <a href="index.html">CRYPTOFLASH<img src="img/bolt.svg" alt="" height="45" width="45"></a>
+                <!-- Registration link -->
+                <a class="nav-link" href="reg.html">Log in</a>
+                <!-- About page link -->
+                <a class="nav-link" href="about.html">About</a>
+                <!-- Updates page link -->
+                <a class="nav-link" href="update.html">Updates</a>
+                <!-- testlink -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -49,11 +49,9 @@ img.d-block {
 div.card {
     width: 18rem;
     background-color: #ffffff;
+        box-shadow: 0 0.125rem 0.25rem rgba(255, 128, 0, 0.075);
 }
 
-div.card:hover {
-    box-shadow: black;
-}
 
 button.btn {
     color: rgb(253, 253, 252);

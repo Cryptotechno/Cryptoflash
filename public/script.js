@@ -94,5 +94,11 @@ $(function () {
 });
 
 
+function addShadow(element) {
+    element.classList.add("shadow-lg");
+}
 
+function removeShadow(element) {
+    element.classList.remove("shadow-lg");
+}
 
