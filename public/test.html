@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
     <style>
         body {
-            background-color: #100e17;
+            background-color: #000000f5;
             font-family: 'Open Sans', sans-serif;
         }
 
@@ -16,7 +16,7 @@
             --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
             width: 250px;
             height: 400px;
-            padding: 2%;
+            padding: 1.5%;
             border-radius: 1rem;
             overflow: visible;
             background: #f7ba2b;
@@ -42,21 +42,26 @@
         }
 
         .card-info {
-            --color: #181818;
-            background: var(--color);
-            color: var(--color);
+            background: #181818;
+            color: #f7ba2b;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 100%;
-            overflow: visible;
+            overflow: hidden;
             border-radius: .7rem;
         }
 
         .card .title {
             font-weight: bold;
             letter-spacing: .1em;
+        }
+
+        .title {
+padding: 5%;                    
+overflow: hidden;
+margin: 5%;
         }
 
         /*Hover*/
@@ -67,7 +72,20 @@
         .card:hover .card-info {
             color: #f7ba2b;
             transition: color 1s;
-
+            transform: translateY(-10px);
+transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+            width: 250px;
+            height: 400px;
+            padding: 2%;
+            border-radius: 1rem;
+            overflow: visible;
+            background: #f7ba2b;
+            background: var(--background);
+            position: relative;
+            z-index: 1;  
         }
 
         .grid-container {
@@ -75,7 +93,7 @@
             grid-template-columns: auto auto auto auto;
             justify-content: center;
             row-gap: 2%;
-            column-gap: 5%;
+            column-gap: -4%;
         }
 
 
@@ -92,34 +110,68 @@
             }
         }
 
-        nav {
-            color: aliceblue;
-            background: #100e17;
-            justify-content: flex-start;
-        }
+        .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+    height: 70px;
 
-        a {
-            text-decoration: none;
-            color: rgb(255, 254, 254);
+}
 
-        }
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 3rem;
+font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+    display: inline-flex;
+      align-items: center;
+font-weight: bolder;
+}
+
+a:hover {
+  color: #ffd700;
+    transform: scale(1.33);
+
+}
+
+
     </style>
 </head>
 
 <body>
+
     <header>
-
         <nav>
-            <div class="grid-container">
-
-                <a href="index.html">CRYPTOFLASH<img src="img/bolt.svg" alt="" height="45" width="45"></a>
-                <!-- Registration link -->
-                <a class="nav-link" href="reg.html">Log in</a>
-                <!-- About page link -->
-                <a class="nav-link" href="about.html">About</a>
-                <!-- Updates page link -->
-                <a class="nav-link" href="update.html">Updates</a>
-                <!-- testlink -->
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">CRYPTOFLASH<img src="img/bolt.svg" alt="" height="55" width="55" class="gradient-icon"></a>
+                </div>
+                <div class="links">
+                    <!-- Registration link -->
+                    <a class="nav-link" href="reg.html">Log in</a>
+                    <!-- About page link -->
+                    <a class="nav-link" href="about.html">About</a>
+                    <!-- Updates page link -->
+                    <a class="nav-link" href="update.html">Updates</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -128,64 +180,25 @@
 
         <div class="card">
             <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+                <h1 class="title">Try 10 Tips for Making Profitable Crypto Trades</h1>
             </div>
         </div>
         <div class="card">
             <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+                <h1 class="title">Learn about the history and growth of cryptocurrencies</h1>
             </div>
         </div>
         <div class="card">
             <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+                <h1 class="title">Get Started with The Beginner's Guide to Crypto currency</h1>
             </div>
         </div>
         <div class="card">
             <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
+                <h1 class="title">Want to read about spot trading?</h1>
             </div>
         </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
+
     </div>
 </body>
 
