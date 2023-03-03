@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptocard</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #000000f5;
-            font-family: 'Open Sans', sans-serif;
+            background-color: #181818;
+            font-family: 'Tilt Neon', cursive;
         }
 
         .card {
+              display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
             --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
             width: 250px;
             height: 400px;
@@ -45,7 +51,9 @@
             background: #181818;
             color: #f7ba2b;
             display: flex;
-            justify-content: center;
+              flex-direction: column;
+
+            justify-content:center;
             align-items: center;
             width: 100%;
             height: 100%;
@@ -53,20 +61,28 @@
             border-radius: .7rem;
         }
 
-        .card .title {
-            font-weight: bold;
-            letter-spacing: .1em;
-        }
+     
 
         .title {
-padding: 5%;                    
-overflow: hidden;
-margin: 5%;
+padding: 8%;                    
+margin: 8%;
+background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
         }
 
         /*Hover*/
         .card:hover::after {
             opacity: 0;
+        }
+
+        .title:hover {
+padding: 8%;                    
+margin: 8%;
+background: linear-gradient(to left, #f7ba2b 0%, #ffffff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
         }
 
         .card:hover .card-info {
@@ -108,13 +124,16 @@ transform: scale(1.05);
                 display: grid;
                 grid-template-columns: auto;
             }
+
+
         }
 
         .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
     height: 70px;
 
 }
@@ -124,8 +143,6 @@ transform: scale(1.05);
   align-items: center;
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .links {
@@ -135,15 +152,14 @@ transform: scale(1.05);
 a {
   color: #fff;
   text-decoration: none;
-  margin-left: 3rem;
-font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  margin-left: 1rem;
   transition: all 0.3s ease-in-out;
     display: inline-flex;
       align-items: center;
-font-weight: bolder;
+  background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 228%;
 }
 
 a:hover {
@@ -152,6 +168,13 @@ a:hover {
 
 }
 
+.gradient-icon {
+ position:absolute;
+ top: 87%;
+ left:20%;
+   margin-left: 60%;
+   padding-bottom: 15px;
+}
 
     </style>
 </head>
@@ -162,9 +185,10 @@ a:hover {
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <a href="index.html">CRYPTOFLASH<img src="img/bolt.svg" alt="" height="55" width="55" class="gradient-icon"></a>
+                    <a href="index.html">CryptoFlash<img src="img/bolt.svg" alt="" height="55" width="55"></a>
                 </div>
                 <div class="links">
+    <!-- Nav links -->
                     <!-- Registration link -->
                     <a class="nav-link" href="reg.html">Log in</a>
                     <!-- About page link -->
@@ -172,6 +196,7 @@ a:hover {
                     <!-- Updates page link -->
                     <a class="nav-link" href="update.html">Updates</a>
                 </div>
+                
             </div>
         </nav>
     </header>
@@ -180,24 +205,60 @@ a:hover {
 
         <div class="card">
             <div class="card-info">
-                <h1 class="title">Try 10 Tips for Making Profitable Crypto Trades</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">Learn about the history and growth of cryptocurrencies</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">Get Started with The Beginner's Guide to Crypto currency</h1>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-info">
-                <h1 class="title">Want to read about spot trading?</h1>
-            </div>
-        </div>
+                <h1 class="title">Try 10 Tips for Making Profitable Crypto Trades
+                </h1>
+                 <img src="img/bolt.svg" alt="" height="40" width="40" class="gradient-icon">
+               </div>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="title">Learn about the History and Growth of Crypto Currencies</h1>
+                                        <img src="img/bolt.svg" alt="" height="40" width="40" class="gradient-icon">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="title">Get Started with The Beginner's Guide to Crypto Currency</h1>
+                                        <img src="img/bolt.svg" alt="" height="40" width="40" class="gradient-icon">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="title">Want to Read about Strategy for Spot Trading?</h1>
+                                        <img src="img/bolt.svg" alt="" height="40" width="40" class="gradient-icon">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="title">Discover the Future of Identity Management in the Decentralized Web</h1>
+                                        <img src="img/bolt.svg" alt="" height="40" width="40" class="gradient-icon">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="title">Maximize Your Profits with Crypto Currency Arbitrage Today</h1>
+                                        <img src="img/bolt.svg" alt="" height="40" width="40" class="gradient-icon">
+
+                        </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-info">
+                        <h1 class="title">Dive Into the Sandbox Metaverse for New Tokens</h1>
+                                        <img src="img/bolt.svg" alt="" height="40" width="40" class="gradient-icon">
+
+                        </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-info">
+                        <h1 class="title">Explore How We're Changing the Game - Join Us Now</h1>
+                                        <img src="img/bolt.svg" alt="" height="40" width="40" class="gradient-icon">
+
+                        </div>
+                        </div>
 
     </div>
 </body>
