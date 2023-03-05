@@ -1,0 +1,1 @@
+<svg width="35" height="35" viewBox="0 0 1495 1360" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="35" height="35" fill="white" /></svg>

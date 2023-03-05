@@ -11,5 +11,16 @@
     ],
     "cleanUrls": true,
     "trailingSlash": false
-  }
+  },
+  
+
+  "rules": {
+    ".read": true,
+    ".write": true
+  },
+
+  "files": [
+    "lib",
+    "bin"
+  ]
 }
