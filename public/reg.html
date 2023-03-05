@@ -1,102 +1,339 @@
 <html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CryptoFlash</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" lang="en" content="Cryptocurrency, crypto, nft, tokens, exchange" />
-  <meta name="keywords" lang="en" content="Cryptocurrency, crypto, nft, tokens, exchange" />
- 
-      <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2551/2551896.png" type="image/png" />
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-5GGN9TG");
-  </script>
-  <!-- End Google Tag Manager -->
+  <title>Google Authentication </title>
+      <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);*/
+    *:focus {
+      outline: none;
+    }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}</style>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5GGN9TG');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+  <script src="script.js"></script>
+  
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GGN9TG" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-<header>
-  <nav>
-    <div class="nav-container">
-      <div class="logo">
-        <a href="index.html">CryptoFlash<svg width="35" height="35" viewBox="0 0 702 896" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_b_6_7)">
-              <path
-                d="M697.201 339.633C693.552 332.264 687.969 326.066 681.071 321.728C674.173 317.39 666.23 315.08 658.121 315.055H438.566V46.9266C439.038 37.1257 436.326 27.4395 430.85 19.363C425.374 11.2865 417.439 5.26868 408.268 2.23851C399.452 -0.713441 389.943 -0.746614 381.107 2.14375C372.271 5.03412 364.563 10.6994 359.088 18.3262L7.80096 509.895C3.39959 516.369 0.756722 523.911 0.139857 531.758C-0.477007 539.606 0.954023 547.479 4.2881 554.583C7.35842 562.705 12.6921 569.738 19.6345 574.819C26.5769 579.899 34.8258 582.806 43.3687 583.183H262.923V851.312C262.93 860.736 265.864 869.916 271.305 877.541C276.747 885.165 284.418 890.844 293.221 893.766C297.633 895.157 302.216 895.909 306.834 896C313.762 896.018 320.597 894.368 326.778 891.183C332.96 887.999 338.314 883.371 342.402 877.678L693.688 386.109C698.419 379.441 701.251 371.574 701.871 363.374C702.49 355.174 700.875 346.959 697.201 339.633V339.633ZM350.745 713.673V538.495C350.745 526.643 346.118 515.277 337.883 506.896C329.649 498.515 318.48 493.807 306.834 493.807H131.19L350.745 184.566V359.743C350.745 371.595 355.371 382.962 363.606 391.342C371.841 399.723 383.01 404.431 394.656 404.431H570.299L350.745 713.673Z"
-                fill="url(#paint0_linear_6_7)" />
-            </g>
-            <defs>
-              <filter id="filter0_b_6_7" x="-4" y="-4" width="710" height="904" filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
-                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_6_7" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_6_7" result="shape" />
-              </filter>
-              <linearGradient id="paint0_linear_6_7" x1="748.359" y1="896" x2="0" y2="896"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#F7BA2B" stop-opacity="0.55" />
-                <stop offset="1" stop-color="#EA5358" />
-              </linearGradient>
-            </defs>
-          </svg></a>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">CryptoFlash<svg width="35" height="35" viewBox="0 0 702 896" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_b_6_7)">
+                <path
+                  d="M697.201 339.633C693.552 332.264 687.969 326.066 681.071 321.728C674.173 317.39 666.23 315.08 658.121 315.055H438.566V46.9266C439.038 37.1257 436.326 27.4395 430.85 19.363C425.374 11.2865 417.439 5.26868 408.268 2.23851C399.452 -0.713441 389.943 -0.746614 381.107 2.14375C372.271 5.03412 364.563 10.6994 359.088 18.3262L7.80096 509.895C3.39959 516.369 0.756722 523.911 0.139857 531.758C-0.477007 539.606 0.954023 547.479 4.2881 554.583C7.35842 562.705 12.6921 569.738 19.6345 574.819C26.5769 579.899 34.8258 582.806 43.3687 583.183H262.923V851.312C262.93 860.736 265.864 869.916 271.305 877.541C276.747 885.165 284.418 890.844 293.221 893.766C297.633 895.157 302.216 895.909 306.834 896C313.762 896.018 320.597 894.368 326.778 891.183C332.96 887.999 338.314 883.371 342.402 877.678L693.688 386.109C698.419 379.441 701.251 371.574 701.871 363.374C702.49 355.174 700.875 346.959 697.201 339.633V339.633ZM350.745 713.673V538.495C350.745 526.643 346.118 515.277 337.883 506.896C329.649 498.515 318.48 493.807 306.834 493.807H131.19L350.745 184.566V359.743C350.745 371.595 355.371 382.962 363.606 391.342C371.841 399.723 383.01 404.431 394.656 404.431H570.299L350.745 713.673Z"
+                  fill="url(#paint0_linear_6_7)" />
+              </g>
+              <defs>
+                <filter id="filter0_b_6_7" x="-4" y="-4" width="710" height="904" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_6_7" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_6_7" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_6_7" x1="748.359" y1="896" x2="0" y2="896"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F7BA2B" stop-opacity="0.55" />
+                  <stop offset="1" stop-color="#EA5358" />
+                </linearGradient>
+              </defs>
+            </svg></a>
+        </div>
+        <div class="links">
+          <!-- Nav links -->
+          <!-- Registration link -->
+          <a class="nav-link" href="reg.html">Log in</a>
+          <!-- About page link -->
+          <a class="nav-link" href="about.html">About</a>
+          <!-- Updates page link -->
+          <a class="nav-link" href="update.html">Updates</a>
+        </div>
       </div>
-      <div class="links">
-        <!-- Nav links -->
-        <!-- Registration link -->
-        <a class="nav-link" href="reg.html">Log in</a>
-        <!-- About page link -->
-        <a class="nav-link" href="about.html">About</a>
-        <!-- Updates page link -->
-        <a class="nav-link" href="update.html">Updates</a>
-      </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
 
-  <div class="section">
-    <br /><br />
-    <h1>Welcome to my next generation vegan IVF twitter with vitamin C</h1>
-    <br /><br />
-    <p>Login</p>
-    <input type="name" placeholder="Your super duper nickname" />
-    <p>Password</p>
-    <input type="password" placeholder="Your secret password" />
-    <br />
-    <br />
-    <button type="button" class="btn btn-primary">
-      Become a wonderful guest of this unique portal
-    </button>
-    <br /><br />
-    <p>
-      This system has not been launched yet, if you know how to make it -
-      write me letters :)
-    </p>
-    <br /><br />
-    <div>
-      <a href="index.html">
-        Home
-      </a>
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+
+    <input type="submit" id="saveData" name="signup_submit" value="Sign in" />
     </div>
+<div class="right">
+  <span class="loginwith">Sign in with<br />social network</span>
+
+      <button class="social-signin facebook">Log in with facebook</button>
+      <button class="social-signin twitter">Log in with Twitter</button>
+      <button class="social-signin google" id='login'>Log in with Google+</button>
+    </div>
+    <div class="or">OR</div>
   </div>
 </body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+  import { getAuth, GoogleAuthProvider, signInWithRedirect, getRedirectResult, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAt-T6DCa--uGQcUQmBRw5Q3PQf4y1Cqoc",
+    authDomain: "quick-formula-367119.firebaseapp.com",
+    databaseURL: "https://quick-formula-367119-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "quick-formula-367119",
+    storageBucket: "quick-formula-367119.appspot.com",
+    messagingSenderId: "513477436914",
+    appId: "1:513477436914:web:e1a71221c0e09c0765776b",
+    measurementId: "G-Z6V7XKKD1C"
+    // your config code
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider(app);
+
+  login.addEventListener('click', (e) => {
+    // signInWithRedirect(auth, provider);
+
+
+    // redirect the result
+    //  getRedirectResult(auth)
+    //    .then((result) => {
+    //      // This gives you a Google Access Token. You can use it to access Google APIs.
+    //      const credential = GoogleAuthProvider.credentialFromResult(result);
+    //      const token = credential.accessToken;
+
+    //      // The signed-in user info.
+    //      const user = result.user;
+
+    //    }).catch((error) => {
+    //      // Handle Errors here.
+    //      const errorCode = error.code;
+    //      const errorMessage = error.message;
+    //      // The email of the user's account used.
+    //      const email = error.email;
+    //      // The AuthCredential type that was used.
+    //      const credential = GoogleAuthProvider.credentialFromError(error);
+    //      // ...
+
+    // });
+
+
+    // sign in with popup tab
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+
+
+        alert(user.displayName);
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+
+        alert(errorMessage);
+      });
+  });
+
+  signOut.addEventListener('click', (e) => {
+
+    signOut(auth).then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      // An error happened.
+    });
+
+  });
+
+</script>
 
 </html>

@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
+    <style>
+        body {
+            font-family: 'Tilt Neon';
+            color: #f7ba2b;
+            background-color: #181818;
+
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            height: 70px;
+
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .links {
+            display: flex;
+
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            transition: all 0.3s ease-in-out;
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 228%;
+        }
+
+        .form {
+            margin: 3%;
+            padding: 3%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">CryptoFlash<svg width="35" height="35" viewBox="0 0 702 896" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_6_7)">
+                                <path
+                                    d="M697.201 339.633C693.552 332.264 687.969 326.066 681.071 321.728C674.173 317.39 666.23 315.08 658.121 315.055H438.566V46.9266C439.038 37.1257 436.326 27.4395 430.85 19.363C425.374 11.2865 417.439 5.26868 408.268 2.23851C399.452 -0.713441 389.943 -0.746614 381.107 2.14375C372.271 5.03412 364.563 10.6994 359.088 18.3262L7.80096 509.895C3.39959 516.369 0.756722 523.911 0.139857 531.758C-0.477007 539.606 0.954023 547.479 4.2881 554.583C7.35842 562.705 12.6921 569.738 19.6345 574.819C26.5769 579.899 34.8258 582.806 43.3687 583.183H262.923V851.312C262.93 860.736 265.864 869.916 271.305 877.541C276.747 885.165 284.418 890.844 293.221 893.766C297.633 895.157 302.216 895.909 306.834 896C313.762 896.018 320.597 894.368 326.778 891.183C332.96 887.999 338.314 883.371 342.402 877.678L693.688 386.109C698.419 379.441 701.251 371.574 701.871 363.374C702.49 355.174 700.875 346.959 697.201 339.633V339.633ZM350.745 713.673V538.495C350.745 526.643 346.118 515.277 337.883 506.896C329.649 498.515 318.48 493.807 306.834 493.807H131.19L350.745 184.566V359.743C350.745 371.595 355.371 382.962 363.606 391.342C371.841 399.723 383.01 404.431 394.656 404.431H570.299L350.745 713.673Z"
+                                    fill="url(#paint0_linear_6_7)" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_b_6_7" x="-4" y="-4" width="710" height="904"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_6_7" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_6_7"
+                                        result="shape" />
+                                </filter>
+                                <linearGradient id="paint0_linear_6_7" x1="748.359" y1="896" x2="0" y2="896"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F7BA2B" stop-opacity="0.55" />
+                                    <stop offset="1" stop-color="#EA5358" />
+                                </linearGradient>
+                            </defs>
+                        </svg></a>
+                </div>
+                <div class="links">
+                    <!-- Nav links -->
+                    <!-- Registration link -->
+                    <a class="nav-link" href="reg.html">Log in</a>
+                    <!-- About page link -->
+                    <a class="nav-link" href="about.html">About</a>
+                    <!-- Updates page link -->
+                    <a class="nav-link" href="update.html">Updates</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="form">
+        <h1>This is a test page</h1>
+        <h2>Enter some text:</h2>
+        <input type="text" id="textInput">
+        <button id="submitButton">Add</button>
+    </div>
+
+    <div class="output">
+        <h2>Output:</h2>
+        <ul id="textList"></ul>
+    </div>
+
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAt-T6DCa--uGQcUQmBRw5Q3PQf4y1Cqoc",
+            authDomain: "quick-formula-367119.firebaseapp.com",
+            databaseURL: "https://quick-formula-367119-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "quick-formula-367119",
+            storageBucket: "quick-formula-367119.appspot.com",
+            messagingSenderId: "513477436914",
+            appId: "1:513477436914:web:e1a71221c0e09c0765776b",
+            measurementId: "G-Z6V7XKKD1C"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Get a reference to the database node where we'll store the text
+        const textRef = firebase.database().ref('text');
+
+        // Get references to the HTML elements we'll be working with
+        const textInput = document.getElementById('textInput');
+        const submitButton = document.getElementById('submitButton');
+        const textList = document.getElementById('textList');
+
+        // Listen for click events on the submit button
+        submitButton.addEventListener('click', () => {
+            // Get the text from the input element
+            const text = textInput.value.trim();
+
+            // If the text is not empty, save it to the database
+            if (text) {
+                textRef.push({ text: text });
+                textInput.value = '';
+            }
+        });
+
+        // Listen for changes to the textRef database node
+        textRef.on('value', (snapshot) => {
+            // Clear the text list
+            textList.innerHTML = '';
+
+            // Loop through the snapshot and add each text item to the list
+            snapshot.forEach((childSnapshot) => {
+                const childKey = childSnapshot.key;
+                const childData = childSnapshot.val();
+                const listItem = document.createElement('li');
+                listItem.textContent = childData.text;
+                textList.appendChild(listItem);
+            });
+        });
+    </script>
+</body>
+
+</html>
